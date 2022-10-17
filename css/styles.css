@@ -131,7 +131,7 @@ img {
 .contacts-list {
     display: flex;
     margin-left: 318px;
-    align-items: baseline;
+    align-items: center;
 }
 
 .contacts-item {
@@ -143,11 +143,11 @@ img {
 }
 .contact {
     font-weight: 500;
-    line-height: 1.14px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
     display: flex;
-    align-items: baseline;
+    align-items: center;
     
 }
 
@@ -244,10 +244,10 @@ font-weight: 900;
     width: 270px;
     height: 120px;
     background-color: var(--team-background);
+    display: flex;
     margin-bottom: 30px;
-    padding: 25px 100px;
-
-
+    justify-content: center;
+    align-items: center;
 }
 
  .benefit-item{
@@ -353,30 +353,26 @@ font-weight: 900;
 .network-box{
     display: flex;
     padding: 16px 32px 30px 32px;
+    justify-content: center;
+    gap: 10px;
 }
 
-.social-network{
+.network-link{
     width: 44px;
     height: 44px;
-    background-color: var(--white);
-    border-radius: 50%;
-    padding: 12px 12px;
     color: var(--network);
-}
-.network-link{
-    color: inherit;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.social-network:hover,
-.social-network:focus{
+.network-link:hover,
+.network-link:focus{
     background-color: var(--brand-color);
     color: var(--white);
-    cursor: pointer;
 }
 
-.social-network:not(:last-child){
-    margin-right: 10px;
-}
 
 .network{
     fill: currentColor;
@@ -393,29 +389,25 @@ font-weight: 900;
 
 .clients-list{
     display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
-.clients-item:not(:last-child){
-    margin-right: 30px;
-}
 
-.clients-box{
-    padding: 16px 32px;
+.clients-link{
     width: 170px;
     height: 92px;
     border-radius: 4px;
     border: 1px solid var(--network);
     color: var(--network);
     display: flex;
+    justify-content: center;
     align-items: center;
     color: var(--network);
 }
-.clients-link{
-    color: inherit
-}
 
-.clients-box:hover,
-.clients-box:focus{
+.clients-link:hover,
+.clients-link:focus{
     border:1px solid var(--brand-color);
     color: var(--brand-color);
 }
@@ -431,13 +423,12 @@ font-weight: 900;
     padding-bottom: 60px;
     
 }
-.footer-box{
+.footer .container{
     display: flex;
+   align-items: baseline;
+    gap: 70px;
 }
 
-.footer-main{
-    margin-right: 70px;
-}
 
 .logo-footer{
     color: var(--white);
@@ -490,11 +481,26 @@ font-weight: 900;
 }
 .network-box-footer{
     display: flex;
+        justify-content: center;
+        gap: 10px;
 }
+
+
 .footer-icon{
+    width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     background-color: rgba(255, 255, 255, 0.1);;
     color: var(--white);
+}
 
+.footer-icon:hover,
+.footer-icon:focus{
+    background-color: var(--brand-color);
+        color: var(--white);
 }
 
 
@@ -572,8 +578,11 @@ margin-left: 8px;
     color: var(--text-color);
 }
 
+.project-link{
+    display: block;
+}
 
-.project-item:focus,
-.project-item:hover {
+.project-link:focus,
+.project-link:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
